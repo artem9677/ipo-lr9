@@ -1,4 +1,9 @@
-def isCorrectRect(list):
-    if list[0][0] >= list[1][0] or list[0][1] >= list[1][1]:
-        return False
-    else : return True
+class RectCorrectError(Exception):
+    pass
+
+def isCorrectRect(rectangles):
+    for i in rectangles:
+        if i[0][0] >= i[1][0] or i[0][1] >= i[1][1]:
+            raise RectCorrectError('Один из прямоугольников некорректный')
+
+    return True

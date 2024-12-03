@@ -1,5 +1,4 @@
-from .isCollisionRect import RectCorrectError
-from .isCorrectRect import isCorrectRect
+from .isCorrectRect import isCorrectRect , RectCorrectError
 from itertools import combinations
 
 def intersectionAreaMultiRect(rectangles):
